@@ -1,0 +1,229 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.clearfix::before , .clearfix::after {
+    content:"" ;
+    display: table;
+}
+
+.clearfix::after{
+    clear: both;
+}
+
+
+.header {
+	background-color: orangered;
+	padding: 16px 0;
+	width: 100%;
+}
+.padding {
+    padding: 60px 32px;
+}
+
+.sidebar {
+	background-color: orangered;
+	width: 30%;
+	align-self: stretch;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+	
+	
+	position: fixed;
+	height: 90vh;
+	
+
+
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav img {
+	padding-right: 20px;
+}
+span {
+    color: white;
+    font-weight: 700;
+    font-size: 32px;
+    vertical-align: middle;
+}
+
+/*.nav-a a {
+	text-decoration: none;
+	color:white ;
+	display: inline-block;
+	border: 1px solid white;
+	padding: 16px;
+	width: 100px;
+	height: 50px;
+	border-radius: 8px;
+	text-align: center;
+	background-color: orangered;
+	font-size: 20px;
+	
+}*/
+.nav-a {
+	padding-left: 32px;
+}
+.nav-a a {
+	font-size: 20px;
+	text-decoration: none;
+	color: white;
+	display: inline-block;
+	border: 1px solid white;
+	padding:  8px;
+	
+}
+
+section {
+	overflow: auto;
+}
+.heading {
+	color: white;
+	font-size: 24px;
+}
+
+h2 {
+	margin-top: 16px;
+}
+
+
+.footer {
+	padding: 16px 0;
+	
+}
+
+.footer .container a {
+	text-decoration: none;
+	margin-right:10px ;
+	color: white;
+}
+
+i {
+	font-size: 16px;
+	display: inline-block;
+	width: 30px;
+	
+}
+
+
+.gallery {
+	width: 60%;
+	margin-left: 40%;
+	
+}
+
+
+.gallery-heading {
+	text-align: center;
+	font-size: 32px;
+}
+.bottom {
+	margin-bottom: 32px;
+}
+
+.col-1-2 {
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+}
+
+
+.col-1-2 img {
+	width: 100%;
+	border: 1px solid black;
+	border-radius: 10px;
+	margin: 12px 0;
+}
+
+
+/*.first {
+	display: flex;
+	flex-direction: column;
+}*/
+
+.img-1 {
+	flex-grow: 1;
+	
+}
+
+
+.flex-image {
+	align-items: flex-start;
+}
+
+.second {
+	display: flex;
+	flex-direction: column;
+	
+	
+	
+}
+
+.second img {
+	align-self: flex-end;
+	flex-grow: 1;
+}
